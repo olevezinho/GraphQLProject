@@ -36,7 +36,7 @@ namespace GraphQLProject.Mutation
                 {
                     var productId = context.GetArgument<int>("id");
                     productService.DeleteProduct(productId);
-                    return "The product with the product id " + productId + "was removed!";
+                    return "The product with the product id " + productId + " was removed!";
                 });
         }
     }
