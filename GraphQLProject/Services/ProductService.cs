@@ -9,7 +9,7 @@ namespace GraphQLProject.Services
 {
     public class ProductService : IProduct
     {
-        private static List<Product> products = new List<Product>()
+        private readonly static List<Product> products = new()
         {
             new Product(){ Id = 0 , Name = "Coffee", Price = 10 },
             new Product(){ Id = 1 , Name = "Tea", Price = 15 },
